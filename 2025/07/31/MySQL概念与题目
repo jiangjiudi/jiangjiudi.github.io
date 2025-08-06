@@ -6,16 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>准备添加一个评论系统，但是不知道什么时候，233 | Sunkaiming&#39;s blog</title>
+  <title>MySQL概念与题目 | Sunkaiming&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="准备添加一个评论系统，但是不知道什么时候，233">
-<meta property="og:url" content="http://example.com/2023/01/20/index.html">
+  <meta name="description" content="设计表要遵循数据库的三大范式 第一范式：要求所有的字段均需要保证原子性（不可再分） 第二范式：要求满足第一范式的基础上，要求表中的所有非主键字段完全依赖于主键。 第三范式：要求满足第二范式的基础上，要求表中所有非主键字段直接依赖于主键。（不能传递依赖）  数据库事务事务的四大特性：ACID 原子性，一致性，隔离性，持久性 一组增删改DML语句 + TCL事务管理语句组成 MySQL事务需要手动开">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL概念与题目">
+<meta property="og:url" content="http://example.com/2025/07/31/MySQL%E6%A6%82%E5%BF%B5%E4%B8%8E%E9%A2%98%E7%9B%AE">
 <meta property="og:site_name" content="Sunkaiming&#39;s blog">
+<meta property="og:description" content="设计表要遵循数据库的三大范式 第一范式：要求所有的字段均需要保证原子性（不可再分） 第二范式：要求满足第一范式的基础上，要求表中的所有非主键字段完全依赖于主键。 第三范式：要求满足第二范式的基础上，要求表中所有非主键字段直接依赖于主键。（不能传递依赖）  数据库事务事务的四大特性：ACID 原子性，一致性，隔离性，持久性 一组增删改DML语句 + TCL事务管理语句组成 MySQL事务需要手动开">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-01-20T08:04:28.000Z">
-<meta property="article:modified_time" content="2023-01-20T08:04:28.743Z">
+<meta property="article:published_time" content="2025-07-30T17:02:27.000Z">
+<meta property="article:modified_time" content="2025-07-31T10:02:56.312Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Sunkaiming&#39;s blog" type="application/atom+xml">
@@ -152,27 +155,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-准备添加一个评论系统，但是不知道什么时候，233" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MySQL概念与题目" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      准备添加一个评论系统，但是不知道什么时候，233
+      MySQL概念与题目
     </h1>
   
 
         
-        <a href="/2023/01/20/" class="archive-article-date">
-  	<time datetime="2023-01-20T08:04:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-20</time>
+        <a href="/2025/07/31/MySQL%E6%A6%82%E5%BF%B5%E4%B8%8E%E9%A2%98%E7%9B%AE" class="archive-article-date">
+  	<time datetime="2025-07-30T17:02:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-07-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script src="/assets/js/DPlayer.min.js"> </script>
+        <script src="/assets/js/DPlayer.min.js"> </script><h4 id="设计表要遵循数据库的三大范式"><a href="#设计表要遵循数据库的三大范式" class="headerlink" title="设计表要遵循数据库的三大范式"></a>设计表要遵循数据库的三大范式</h4><ul>
+<li>第一范式：要求所有的字段均需要保证原子性（不可再分）</li>
+<li>第二范式：要求满足第一范式的基础上，要求表中的所有非主键字段完全依赖于主键。</li>
+<li>第三范式：要求满足第二范式的基础上，要求表中所有非主键字段直接依赖于主键。（不能传递依赖）</li>
+</ul>
+<h4 id="数据库事务"><a href="#数据库事务" class="headerlink" title="数据库事务"></a>数据库事务</h4><p>事务的四大特性：ACID 原子性，一致性，隔离性，持久性</p>
+<p>一组增删改DML语句 + TCL事务管理语句组成</p>
+<p>MySQL事务需要手动开始</p>
+<p>事务开始 BEGIN </p>
+<p>START TRANSACTION 开启事务</p>
+
       
 
       
@@ -201,6 +214,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -251,7 +275,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/01/20/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2025/07/31/MySQL%E6%A6%82%E5%BF%B5%E4%B8%8E%E9%A2%98%E7%9B%AE" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,18 +289,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2023/02/16/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2025/07/31/%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          static 修饰局部变量，改变了局部变量的生命周期
+          测试一下
         
       </div>
     </a>
   
   
-    <a href="/2023/01/19/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">大家好，这是我的博客</div>
+    <a href="/2025/07/31/Csharp" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Csharp</div>
       <i class="icon-circle-right"></i>
     </a>
   
